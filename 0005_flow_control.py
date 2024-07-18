@@ -1,4 +1,6 @@
-############################## If else #############################
+# ---------------------------------------------------------------------------- #
+#                                    If else                                   #
+# ---------------------------------------------------------------------------- #
 
 num = 10
 # ! Be mindful of the indentation while writing the if statements. Indentation is the whitespace at 
@@ -30,9 +32,9 @@ print(resut)
 if num > 5 and num < 15:
     print("Num greater than 5 less than 15")
     
-    
-    
-############################## For Loops #############################
+# ---------------------------------------------------------------------------- #
+#                                   For Loop                                   #
+# ---------------------------------------------------------------------------- #
 os_list = ["Linux", "Windows", "Mac"]
 for os in os_list:
     print(os)
@@ -52,11 +54,13 @@ for i in range(2):
 else :
     print("No item left")
     
-# Usse "_" as placehold and its value is intentionally being ignored.
+# Use "_" as placehold and its value is intentionally being ignored.
 for _ in range(5):
     print("Execute")
 
-############################## While Loops #############################
+# ---------------------------------------------------------------------------- #
+#                                  While Loops                                 #
+# ---------------------------------------------------------------------------- #
 num = 1
 while num < 5:
     print(num)
@@ -78,14 +82,14 @@ while counter < 5:
 else :
     print("Counter end")
 
-############################## Break & Conitinue #############################
-# Break
+# ---------------------------------------------------------------------------- #
+#                               Break & Conitinue                              #
+# ---------------------------------------------------------------------------- #
 for i in range(5):
     if i == 3:
         break
     print(i)
 
-# Continue
 for i in range(5):
     if i == 3:
         continue
