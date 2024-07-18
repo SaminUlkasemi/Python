@@ -1,8 +1,8 @@
 ############################## If else #############################
 
 num = 10
-#  Be mindful of the indentation while writing the if statements. Indentation is the whitespace at 
-#  the beginning of the code.
+# ! Be mindful of the indentation while writing the if statements. Indentation is the whitespace at 
+# ! the beginning of the code.
 if num > 10:
     print("Num greater than 5")
 elif num < 15:
@@ -32,16 +32,16 @@ if num > 5 and num < 15:
     
     
     
-############################## Loops #############################
+############################## For Loops #############################
 os_list = ["Linux", "Windows", "Mac"]
 for os in os_list:
     print(os)
     
+# Iterate through character
 langugage = "Systemverilog"
 for char in langugage:
     print(char)
     
-
 # For loop range
 for i in range(5):
     print(i)
@@ -55,4 +55,54 @@ else :
 # Usse "_" as placehold and its value is intentionally being ignored.
 for _ in range(5):
     print("Execute")
-    
+
+############################## While Loops #############################
+num = 1
+while num < 5:
+    print(num)
+    num = num + 1
+
+# ! Infinite loop with break condition
+while True:
+    user_input = input("Enter your name: ")
+    if user_input == "end":
+        print("This loop has ended")
+        break
+    print(user_input)
+
+# While loop with else condition
+counter = 0
+while counter < 5:
+    print(counter)
+    counter += 1
+else :
+    print("Counter end")
+
+############################## Break & Conitinue #############################
+# Break
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+
+# Continue
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+
+# ---------------------------------------------------------------------------- #
+#                                     Pass                                     #
+# ---------------------------------------------------------------------------- #
+# In Python programming, the pass statement is a null statement which can be used 
+# as a placeholder for future code.
+# * Note: The difference between a comment and a pass statement in Python is that 
+# while the interpreter ignores a comment entirely, pass is not ignored.
+if num > 10:
+    pass
+
+print("Pass")
+
+def foo(args):
+    pass
+print("Pass")
