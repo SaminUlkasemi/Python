@@ -8,6 +8,9 @@ output_file = "flash.txt"
 # flush (optional) - boolean specifying if the output is flushed or buffered. Default: False
 # print("Ulkasemi", sep=" | ", file=output_file, flush=True)
 
-########################    Python Input    ########################
+# ---------------------------------------------------------------------------- #
+#                                 Python Input                                 #
+# ---------------------------------------------------------------------------- #
+# The input() function always returns a string
 name = input("Enter a name ")
 print("Your Entered: ", name)
