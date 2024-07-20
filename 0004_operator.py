@@ -16,7 +16,7 @@ print("num1 // num2: ", num1 // num2)
 # Module
 print("num1 % num2 : ", num1 % num2)
 # Power
-print("num1 ** num2: ", num1**num2)
+print("num1 ** num2: ", num1 **num2)
 
 # ---------------------------------------------------------------------------- #
 #                                    Logical                                   #
@@ -51,7 +51,6 @@ list2 = [1, 2, 3]
 print("x1 is x2: "     , x1 is x2)
 print("x1 is not x3: " , x1 is not x3)
 print("list1 is list2:", list1 is list2)
-
 
 # ---------------------------------------------------------------------------- #
 #                                  Membership                                  #

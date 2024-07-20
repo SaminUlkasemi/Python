@@ -5,6 +5,8 @@
 num = 10
 # ! Be mindful of the indentation while writing the if statements. Indentation is the whitespace at 
 # ! the beginning of the code.
+print("# --------------------------------- If else --------------------------------- #")
+
 if num > 10:
     print("Num greater than 5")
 elif num < 15:
@@ -35,6 +37,7 @@ if num > 5 and num < 15:
 # ---------------------------------------------------------------------------- #
 #                                   For Loop                                   #
 # ---------------------------------------------------------------------------- #
+print("# --------------------------------- For loop --------------------------------- #")
 os_list = ["Linux", "Windows", "Mac"]
 for os in os_list:
     print(os)
@@ -44,9 +47,19 @@ langugage = "Systemverilog"
 for char in langugage:
     print(char)
     
-# For loop range
+# For loop with range
 for i in range(5):
     print(i)
+
+# * The range() function can also be called with three arguments. The first two
+# * arguments will be the start and stop values, and the third will be the step
+# * argument
+for i in range(10, 20, 2):
+    print(i)
+
+for i in range(20, 10, -3):
+    print(i)
+
     
 # For loop with else
 for i in range(2):
@@ -61,6 +74,8 @@ for _ in range(5):
 # ---------------------------------------------------------------------------- #
 #                                  While Loops                                 #
 # ---------------------------------------------------------------------------- #
+print("# -------------------------------- While loop -------------------------------- #")
+
 num = 1
 while num < 5:
     print(num)
@@ -69,6 +84,7 @@ while num < 5:
 # ! Infinite loop with break condition
 while True:
     user_input = input("Enter your name: ")
+    print("Enter \"end\" to break the while loop")
     if user_input == "end":
         print("This loop has ended")
         break

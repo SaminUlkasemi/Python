@@ -23,11 +23,10 @@ print(lang_list[-1])
 # Slicing a list
 print(lang_list[2:4])
 
-# -------------------------------- List Length ------------------------------- #
+# -------------------------------- List Method ------------------------------- #
+# List length
 print("list length:", len(arr))
 
-
-# -------------------------------- List Method ------------------------------- #
 # Append
 arr = ["Apple", "Orange", "Pineapple", "Watermelon"]
 
