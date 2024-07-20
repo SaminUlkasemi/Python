@@ -4,10 +4,19 @@
 
 def foo1():
     egg = 100
-    foo2()
+#    foo2()
 
-def foo2():
-    print(egg)
+# def foo2():
+#    print(egg)
+
+#foo1()
+
+def printSpam():
+    egg = "local"
+
+egg = "global"
+printSpam()
+print(egg)
+# ------------------------------ Global statment ----------------------------- #
 
 
-foo1()
