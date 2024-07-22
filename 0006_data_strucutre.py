@@ -164,6 +164,17 @@ var = ("Python",)
 for v in var:
     print(v)
 
+#* (Unlike some other programming languages, in Python it’s fine to have a trailing comma after 
+#* the last item in a list or tuple
+
+#* because they are immutable and their contents don’t change, Python can implement some optimizations 
+#* that make code using tuples slightly faster than code using lists.
+
+# ------------------------- Converting list to tuple ------------------------- #
+my_list = [23, 34, 4]
+my_tuple = tuple(my_list)
+print(my_tuple)
+
 # ---------------------------------------------------------------------------- #
 #                                      Set                                     #
 # ---------------------------------------------------------------------------- #
@@ -204,3 +215,65 @@ print(student_id)
 # ---------------------------------------------------------------------------- #
 #                                  Dictonaries                                 #
 # ---------------------------------------------------------------------------- #
+#* Indexes for dictionaries are called keys, and a key with its associated value is
+#* called a key-value pair.
+print("---------------------------- Dictonaries -------------------------------")
+myCat = {'size' : 'small', 'color' : 'orange', 'disposition' : 'loud'}
+
+# ---------------------------- List VS Dictonaries ---------------------------- #
+# While the order of items matters for determining whether two lists are the same, it does not
+# matter in what order the key-value pairs are typed in a dictionary
+spam = ['cats', 'dogs', 'moose']
+bacon = ['dogs', 'moose', 'cats']
+print(spam == bacon)
+eggs = {'name': 'Zophie', 'species': 'cat', 'age': '8'}
+ham = {'species': 'cat', 'age': '8', 'name': 'Zophie'}
+print(eggs == ham)
+
+#! Because dictionaries are not ordered, they can’t be sliced like lists.
+
+# ---------------------------- Dictonaries Methods ---------------------------- #
+#* The .key(), .values(), .item() methods return list-like values, 
+#! they are not true list, They cannot be modified and do not have an append() method
+#* hese data types (dict_keys, dict_values, and dict_items, respectively) can be used in for loops.
+
+print("Keys")
+for i in myCat.keys():
+    print(i)
+
+print("values")
+for i in myCat.values():
+    print(i)
+
+print("items")
+for i in myCat.items():
+    print(i)
+
+# get() method that takes two arguments: the key of the value to retrieve and a fallback value to 
+# return if that key does not exist.
+picnitItem = {'apple': 5, 'eggs': 10}
+print("I am bringing", picnitItem.get("apple", 0),  "for the picnic")
+print("I am bringin",  picnitItem.get("orange", 0), "for the picnic") # Because there is no 'orange' key 
+# in the picnicItem dictionary, the default value 0 is returned by the get() method.
+
+# In setdefault() method first argument passed to the method is the key to check for, and 
+# the second argument is the value to set at that key if the key does not exist. If the key 
+# does exist, the setdefault() method returns the key’s value.
+myCar = {'cc' : 2000, 'type' : 'SUV'}
+print(myCar.setdefault('color', 'black'))
+print(myCar.setdefault('color', 'blue'))
+
+myBike = {'engine' : {'cc': 165, 'stroke': 4}, 'color': 'blue'}
+# use pprint for nice display of dictonaries value
+import pprint
+pprint.pprint(myBike)
+
+
+# ---------------------------- Mutiple assignment ---------------------------- #
+for k, v in myCat.items():
+    print("Key:", k, ",", "Value: ", v)
+
+# ---------- Checking Whether a Key or Value Exists in a Dictionary ---------- #
+print('cat' in eggs.values())
+print('age' not in eggs.keys())
+
