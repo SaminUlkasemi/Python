@@ -63,11 +63,23 @@ try:
 except:
     print("Dir not found")
 
+# ------------------- Function to get the files & it's size ------------------ #
 print('Documents folder'.center(70, "*"))
 filesSize = {}
-for filename in os.listdir('/home/samin/Documents'):
-    filesSize[filename] = os.path.getsize('/home/samin/Documents/' + filename)
+try:
+    for filename in os.listdir('/home/samin/Documents'):
+        filesSize[filename] = os.path.getsize('/home/samin/Documents/' + filename)
 
-print("Name".ljust(70), "Size", "\n")
-for k, v in filesSize.items():
-    print(str(k).ljust(70, '-'), str(v).ljust(1))
+    print("Name".ljust(70), "Size", "\n")
+    for k, v in filesSize.items():
+        print(str(k).ljust(70, '-'), str(v).ljust(1))
+except:
+    print("Dir not found")
+    
+# ! This portion works only in windows
+# -------------------------- Checking path validity -------------------------- #
+print("Checking path validity".center(70, "*"))
+try:
+    print(os.path.exists(r"C:\Users\230907\Documents"))
+except Exception as e:
+    print(e)
