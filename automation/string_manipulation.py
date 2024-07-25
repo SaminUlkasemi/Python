@@ -16,6 +16,11 @@ print(string)
 #* Usefull for regular expression
 print(r'which are \'islands\' of stars with the \'sea\' of emptiness in between')
 
+# ----------------------------- Formatter string ----------------------------- #
+name = "Hasan"
+age = 50
+print(f'Name: {name}, age: {age}')
+
 # ----------------------------- Multiline stringx ---------------------------- #
 msg = '''Dear Alice,
     Eve's cat has been arrested for catnapping, cat burglary, and extortion.
