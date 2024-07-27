@@ -8,6 +8,7 @@
     - https://github.com/python
 
 ### Repo structure
+```
 ├── 0001_introduction.py
 ├── 0002_data_type_&_vars.py
 ├── 0003_intput_output.py
@@ -51,3 +52,4 @@
 ├── README.md
 └── Stackoverflow
     └── stackoverflow.md
+```
