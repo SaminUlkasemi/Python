@@ -1,6 +1,7 @@
 # ---------------------------------------------------------------------------- #
 #                                    If else                                   #
 # ---------------------------------------------------------------------------- #
+# Ref: https://www.youtube.com/watch?v=aGy7U5ItLRk
 
 num = 10
 # ! Be mindful of the indentation while writing the if statements. Indentation is the whitespace at 
@@ -126,3 +127,26 @@ print("Pass")
 def foo(args):
     pass
 print("Pass")
+
+# ---------------------------------------------------------------------------- #
+#                                     case                                     #
+# ---------------------------------------------------------------------------- #
+# Ref: https://www.freecodecamp.org/news/python-switch-statement-switch-case-example/clear
+lang = str(input("Which language do you want to learn[JavaScript, Python, PHP, Java, Solidity]: "))
+match lang:
+    case "JavaScript":
+        print("You can become a web developer.")
+
+    case "Python":
+        print("You can become a Data Scientist")
+
+    case "PHP":
+        print("You can become a backend developer")
+    
+    case "Solidity":
+        print("You can become a Blockchain developer")
+
+    case "Java":
+        print("You can become a mobile app developer")
+    case _:
+        print("The language doesn't matter, what matters is solving problems.")
