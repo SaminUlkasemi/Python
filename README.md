@@ -69,3 +69,6 @@ Task:
 https://www.youtube.com/watch?v=MEMDi9mTCiU  
 https://www.youtube.com/results?search_query=lamda+function  
 https://www.youtube.com/watch?v=bO3-CWDMxCk  
+
+Topics:  
+     - python return type
