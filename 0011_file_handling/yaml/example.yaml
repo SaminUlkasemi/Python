@@ -1,0 +1,15 @@
+key: value
+
+myList:
+  - item1
+  - item2
+  - item3
+
+myDict:
+  key1: value1
+  key2: value2
+
+mul-line-str: |
+  Working with
+  yaml file
+  in pytohn

@@ -52,6 +52,10 @@
 └── Stackoverflow
     └── stackoverflow.md
 ```
+
+## Python unfinished:  
+    -   with keyword -> https://www.geeksforgeeks.org/with-statement-in-python/  
+
 ## Python cool feature
 - [f string](https://www.youtube.com/watch?v=EoNOWVYKyo0&list=PL4KX3oEgJcfeKzc-v2nD-KzTSELlNyafC&index=9)  
 - [Random number](https://www.youtube.com/watch?v=Ffeb5ibQDP0&list=PL4KX3oEgJcfeKzc-v2nD-KzTSELlNyafC&index=16)  

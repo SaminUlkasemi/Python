@@ -6,6 +6,7 @@
 #              -> https://www.geeksforgeeks.org/finally-keyword-in-python/        
 #              -> https://www.geeksforgeeks.org/try-except-else-and-finally-in-python/       
 # Ref: custom exception -> https://www.programiz.com/python-programming/user-defined-exception
+# Ref: https://docs.python.org/3/tutorial/errors.html
 
 def division(divisor):
     try:
