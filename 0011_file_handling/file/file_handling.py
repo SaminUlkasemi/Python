@@ -140,3 +140,20 @@ try:
     shutil.move("file_for_move3.txt", 'myfile')
 except Exception as e:
     print(e)
+    
+# ------------------ Permanently Deleting Files and Folders ------------------ #
+#  os.unlink(path)
+#  os.rmdir(path) 
+#  For Safe Deletes use third-party send2trash Module
+
+# ------------------------- Walking a directory tree ------------------------- #
+print(os.getcwd())
+for folderNames, subFolders, fileNames in os.walk("."):
+    print("Folder")
+    print(folderNames)
+    print(" - Subfolder: ")
+    for subFolder in subFolders:
+        print(f"    {subFolder}")
+    print(" - Filenames")
+    for fileName in fileNames:
+        print(f"    {fileName}")
