@@ -1,6 +1,7 @@
 # ---------------------------------------------------------------------------- #
 #                                 yaml handling                                #
 # ---------------------------------------------------------------------------- #
+# Ref: Learn YAML structure -> https://www.youtube.com/watch?v=0fbnyS_lHW4&ab_channel=VincentLab
 # Ref: https://www.youtube.com/watch?v=nFl6EXfcvLI&ab_channel=NeuralNine
 # Ref: https://pyyaml.org/wiki/PyYAMLDocumentation
 
@@ -25,5 +26,5 @@ myData = {
     }
 }
 
-with open("myYaml.yaml", "w") as f:
+with open("myyaml.yaml", "w") as f:
     yaml.dump(myData, f, default_flow_style=False)
