@@ -4,15 +4,17 @@
 
 
 
-from MyLib import * 
+import MyLib as ml
 
-mySum(10, 20)
-
+# from MyLib.Arithmatic_pkg.sub_module
+ml.mySub(10, 20)
+ml.sum_module.mySum(10, 23)
 
 #ab.Arithmatic_pkg.sum_module.sum(10, 20)
 #ab.sub_module.sub(10, 20)
 #? sum_module.sum(10, 20)
 
+'''
 from MyLib.Print_pkg.print_data_time_module import printDateTime
 from MyLib.Print_pkg.print_msg_module import printMsg
 from MyLib import Arithmatic_pkg
@@ -23,4 +25,5 @@ from MyLib import Arithmatic_pkg
 printDateTime()
 printMsg("From Ulkasemi")
 printMsg()
+'''
 
