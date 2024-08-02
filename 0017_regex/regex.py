@@ -10,6 +10,9 @@
 # ---------------------------------------------------------------------------- #
 #                          Pattern Matching with Regex                         #
 # ---------------------------------------------------------------------------- #
+# Ref: Automate the Boring Stuff with Python_ Practical Programming for Total Beginners
+#       chapter -> 
+
 #*  Python has two ways for regular expresssion
 #   1 ---->
 #       I.   Import the regex module with import re.
@@ -151,3 +154,8 @@ print(mo.group(2))
 print("     greedy: ", re.search(r'<.*>', "<To serve man> for dinner.>").group())
 # non-greedy
 print("Non- greedy: ", re.search(r'<.*?>', "<To serve man> for dinner.>").group())
+
+# .DOTALL -> re.compile('.*', re.DOTALL)
+# Case-Insensitive matching -> re.compiler('.*', re.I)
+# re.IGNORECASE, re.DOTALL, and re.VERBOSE
+# ?:

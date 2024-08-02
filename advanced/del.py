@@ -3,3 +3,4 @@ var = 10
 # ! variable will no longer exits 
 del var
 print(var)
+

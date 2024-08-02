@@ -27,6 +27,23 @@ def foo():
 
 print(foo())
 
+# function argument with default value
+def func_def_val(x = 0, y = 0):
+    return x + y
+
+print("function with default value: ", func_def_val())
+
+# function argument with type
+def func(x:int, y:int):
+    if type(x) != int:
+        raise ValueError
+    return x + y
+
+print("function with argument: ",func(10, 10))
+
+myFunc = func_def_val
+print(myFunc())
+
 # ----------------------------- Keyword Arguments ---------------------------- #
 # 131 page
 
