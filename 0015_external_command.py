@@ -37,3 +37,11 @@ try:
 except Exception as e:
     print(e)
 '''
+
+
+# However, if you're having trouble finding the path to the Python executable on your machine, you can have the sys 
+# module do that for you. This module interacts very well with the subprocess, and a good use case for it is to 
+# replace the path to the executable like this:
+# Ref: https://www.dataquest.io/blog/python-subprocess/
+import sys
+result = subprocess.run([sys.executable, "-c", "print('This is a subprocess')"])
