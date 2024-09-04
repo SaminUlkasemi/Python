@@ -70,6 +70,10 @@ Use vscode better comment extension
 - [is immutability is lie](https://www.youtube.com/watch?v=W0jA0RzCW4E&list=PL4KX3oEgJcfeKzc-v2nD-KzTSELlNyafC)  
 
 
+## Python libraries  
+ - [Constraint problem solving](https://pycsp.org/)
+
+
 Task:  
 https://www.youtube.com/watch?v=MEMDi9mTCiU  
 https://www.youtube.com/results?search_query=lamda+function  
