@@ -86,3 +86,4 @@ Topics:
 Task:  
 python compartment  
 python run according to version  
+[Python *args and **kwargs](https://www.programiz.com/python-programming/args-and-kwargs)
